@@ -9,6 +9,7 @@ if __name__ == "__main__":
     sigma_30 = Task_1.give_prior_distribution(h_values, sigma, sigma)
     sigma_30 = {k: v / sum(sigma_30.values()) for k, v in sigma_30.items()}
     print(sum(sigma_30.values()))
+    Task_1.plot_bar(sigma_30, "(Sigma = 30) Hypothesis", "Normalized Expected Prior Probability")
     print(sigma_30)
     # part a
     posterior_3 = Task_2.give_posterior_probability(sigma_30, [(2.2, -0.2)])
