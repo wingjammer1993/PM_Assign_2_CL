@@ -23,6 +23,8 @@ def give_posterior_probability(sig_12, x):
     for h in sig_12:
         area_h = give_size_principal_likelihood(h, x)
         posterior_x[h] = sig_12[h]*area_h
+    sum_post = sum(posterior_x.values())
+    posterior_x = {k: v / sum_post for k, v in posterior_x.items()}
     return posterior_x
 
 
