@@ -14,18 +14,21 @@ if __name__ == "__main__":
     # part a
     posterior_3 = Task_2.give_posterior_probability(sigma_30, [(2.2, -0.2)])
     print(posterior_3)
+    Task_1.plot_bar(posterior_3, "(sigma = 30,{(2.2, -0.2)}) Hypothesis", "Posterior probability")
     gen_pred_3 = Task_3.give_general_prediction(y_values, h_values, posterior_3)
     print(gen_pred_3)
     Task_3.plot_contour(y_values, gen_pred_3, "Generalized Predictions with X = {(2.2, -2)}")
     # part b
     posterior_4 = Task_2.give_posterior_probability(sigma_30, [(2.2, -0.2), (0.5, 0.5)])
     print(posterior_4)
+    Task_1.plot_bar(posterior_4, "(sigma = 30,{(2.2, -0.2), (0.5, 0.5)}) Hypothesis", "Posterior probability")
     gen_pred_4 = Task_3.give_general_prediction(y_values, h_values, posterior_4)
     print(gen_pred_4)
     Task_3.plot_contour(y_values, gen_pred_4, "Generalized Predictions with X = {(2.2, -2),(0.5, 0.5)}")
     # part c
     posterior_5 = Task_2.give_posterior_probability(sigma_30, [(2.2, -0.2), (0.5, 0.5), (1.5, 1)])
     print(posterior_5)
+    Task_1.plot_bar(posterior_5, "(sigma = 30,{(2.2, -0.2), (0.5, 0.5), (1.5, 1)}) Hypothesis", "Posterior probability")
     gen_pred_5 = Task_3.give_general_prediction(y_values, h_values, posterior_5)
     print(gen_pred_5)
     Task_3.plot_contour(y_values, gen_pred_5, "Generalized Predictions with X = {(2.2, -2),(0.5, 0.5), (1.5, 1)}")
